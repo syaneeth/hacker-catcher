@@ -1,0 +1,135 @@
+.start {
+  color: #000;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: Goldman, Arial;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 154px;
+  display: flex;
+}
+
+.hospital {
+  height: 100%;
+  background-image: url("/src/assets/hospital1.png");
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: stretch;
+  display: flex;
+}
+
+.floating-robot-removebg-preview {
+  width: 208px;
+  height: 227px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+}
+
+.flex-container {
+  width: 100%;
+  flex-direction: column;
+  flex-basis: 70%;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: flex-end;
+  padding-right: 80px;
+  display: flex;
+}
+
+.rectangle-1 {
+  width: 786px;
+  height: 276px;
+  object-fit: cover;
+  align-self: flex-start;
+  margin-bottom: -276px;
+  margin-left: 327px;
+  margin-right: 247px;
+}
+
+.cat-absolute-container {
+  z-index: 1;
+  width: 55%;
+  flex-direction: row;
+  flex-basis: 38%;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: -199px;
+  padding-bottom: 2px;
+  padding-left: 19px;
+  font-size: 8rem;
+  display: flex;
+}
+
+.hacker-catcher {
+  align-self: center;
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+
+.robot-saying-hi-removebg-preview {
+  z-index: 1;
+  width: 603px;
+  height: 643px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+  margin-bottom: -413px;
+}
+
+.rectangle-2 {
+  z-index: 1;
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #000;
+  flex-direction: row;
+  flex-basis: 17%;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  margin-top: -29px;
+  padding-top: 1px;
+  padding-left: 4px;
+  line-height: 20px;
+  display: flex;
+}
+
+.play {
+  align-self: center;
+  margin-top: 1px;
+  margin-left: 2px;
+}
+
+.rectangle-3 {
+  z-index: 1;
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #000;
+  flex-direction: row;
+  flex-basis: 24%;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  margin-top: 7px;
+  padding-top: 7px;
+  padding-left: 2px;
+  line-height: 60px;
+  display: flex;
+}
+
+.load-game {
+  align-self: center;
+  margin-top: 3px;
+  margin-left: 1px;
+}
