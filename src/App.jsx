@@ -1,34 +1,32 @@
-import * as React from "react";
-import "./App.css";
-import robotSayingHiRemovebgPreview from "./assets/robotSayingHiRemovebgPreview.png";
-import floatingRobotRemovebgPreview from "./assets/floatingRobotRemovebgPreview.png";
-import rectangle1 from "./assets/rectangle1.svg";
-const App = () => {
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
+import questTheme from 'src/MyDesignSystemLightTheme';
+import Start from 'src/components/Start/Start';
+import Slide1 from 'src/components/Slide1/Slide1';
+import Slide2 from 'src/components/Slide2/Slide2';
+import Slide3 from './components/Slide3/Slide3';
+import Slide4 from './components/Slide4/Slide4';
+import Slide5 from './components/Slide5/Slide5';
+
+function App() {
   return (
-    <div className="start">
-      <div className="hospital">
-        <img
-          className="floating-robot-removebg-preview"
-          src={floatingRobotRemovebgPreview}
-        />
-        <div className="flex-container">
-          <img className="rectangle-1" src={rectangle1} />
-          <div className="cat-absolute-container">
-            <span className="hacker-catcher">Hacker Catcher</span>
-          </div>
-          <img
-            className="robot-saying-hi-removebg-preview"
-            src={robotSayingHiRemovebgPreview}
-          />
-          <div className="rectangle-2">
-            <span className="play">PLAY</span>
-          </div>
-          <div className="rectangle-3">
-            <span className="load-game">LOAD GAME</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <HelmetProvider>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={questTheme}>
+          <Routes>
+            <Route path="/" element={<Start />} />
+            <Route path="/slide1" element={<Slide1 />} />
+            <Route path="/slide2" element={<Slide2 />} />
+            <Route path="/slide3" element={<Slide3 />} />
+            <Route path="/slide4" element={<Slide4 />} />
+            <Route path="/slide5" element={<Slide5 />} />
+          </Routes>
+        </ThemeProvider>
+      </StyledEngineProvider>
+    </HelmetProvider>
   );
-};
+}
+
 export default App;
